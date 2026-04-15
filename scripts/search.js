@@ -18,12 +18,12 @@ function renderResults(items) {
 function handleSearch() {
   const query = searchInput.value.trim().toLowerCase();
   if (!query) {
-    renderResults(jsObjectData);
+    renderResults(shortcutsData);
     searchMessage.textContent = "Type to search all fields";
     return;
   }
   
-  const results = jsObjectData.filter(item => {
+  const results = shortcutsData.filter(item => {
     const values = Object.values(item);
     return values.some(value => String(value).toLowerCase().includes(query));
   });
@@ -34,4 +34,4 @@ function handleSearch() {
 
 searchInput.addEventListener("input", handleSearch);
 
-renderResults(jsObjectData);
+renderResults(shortcutsData);
