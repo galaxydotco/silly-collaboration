@@ -8,6 +8,14 @@ const searchInput = document.getElementById("searchInput");
 const searchResults = document.getElementById("searchResults");
 const searchMessage = document.getElementById("searchMessage");
 
+let shortcutsData = []; // global var to hold fetched data
+
+// 1. fetch data from json file
+// 2. render data to the html 
+// 3. handle filtering 
+// event listeners
+// initialize app
+
 function renderResults(items) {
   searchResults.innerHTML = "";
   if (items.length === 0) {
