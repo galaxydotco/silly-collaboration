@@ -1,3 +1,9 @@
+/*
+    CIS 376 - 01 ; Dr. Cumbie
+    Jasmine Morgan, Carina Estrada, and Anthony Guerrero
+    4/20/2026
+    Description: Search and Filter App for Shortcuts.
+*/
 const searchInput = document.getElementById("searchInput");
 const searchResults = document.getElementById("searchResults");
 const searchMessage = document.getElementById("searchMessage");
